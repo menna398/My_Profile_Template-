@@ -253,9 +253,82 @@ a {
   width: 100%;
 }
 
-.post1Div , .post2Div , .post3Div {
+.post1Div,
+.post2Div,
+.post3Div {
   box-shadow: 0 0 10px #6c7d85;
   border-radius: 0.5em;
   padding: 2em;
   margin: 2em 1em;
+}
+
+@media (max-width: 768px) {
+  .rightNavBar {
+    display: none;
+  }
+
+  .collapsDiv {
+    display: block;
+  }
+
+  .navBar {
+    padding: 0 0.5em;
+  }
+
+  .homeDiv {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+  }
+
+  .leftDiv,
+  .middleDiv,
+  .rightDiv {
+    width: 100%;
+  }
+
+  .ImgDivCard,
+  .intrestDiv,
+  .heyDiv,
+  .writPostDiv,
+  .post1Div,
+  .post2Div,
+  .post3Div {
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  .profileDiv img {
+    width: 50%;
+  }
+
+  .intrestItemsDiv {
+    justify-content: center;
+  }
+
+  .footer {
+    padding: 2em 1em;
+  }
+
+  .intrestDiv,
+  .heyDiv {
+    width: 100%;
+    max-width: 22rem;
+     margin-left: auto;
+    margin-right: auto;
+  }
+
+  .leftDiv {
+    width: 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  word-wrap: break-word;
 }
