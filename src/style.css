@@ -315,7 +315,7 @@ a {
   .heyDiv {
     width: 100%;
     max-width: 22rem;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
   }
 
@@ -331,4 +331,25 @@ img {
 
 p {
   word-wrap: break-word;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .homeDiv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .leftDiv,
+  .rightDiv {
+    width: 45%;
+  }
+
+  .middleDiv {
+    width: 100%;
+    order: -1;
+  }
+
+  .profileDiv img {
+    width: 40%;
+  }
 }
